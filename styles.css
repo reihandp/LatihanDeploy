@@ -1,0 +1,148 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+.landing-page {
+  font-size: 35px;
+  background-attachment: fixed;
+  position: relative;
+
+  background-image: url(img/pesawat.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* kureng */
+.welcome-text {
+  position: absolute;
+
+  margin: 0;
+  width: 100%;
+  top: 45%;
+  text-align: center;
+  color: white;
+  transform: scale(0.9);
+}
+
+ul.nav {
+  background-color: black;
+  top: 0;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+
+  margin-bottom: 2cm;
+}
+
+.nav > li {
+  display: inline-block;
+  margin: auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  /* kurtau kegunaannya */
+  transition: 0.5s;
+}
+
+.nav > li > a:hover {
+  background-color: aliceblue;
+  color: black;
+}
+#about-me {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1cm;
+}
+img {
+  max-width: 200px;
+}
+
+.second {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+}
+
+.section-introduction,
+.section-education,
+.section-working {
+  text-align: center;
+}
+
+hr {
+  margin: 1cm;
+}
+
+div.portfolio {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 45px;
+  padding: 30px;
+}
+.img-portfolio {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+
+/* CONTACT HERE */
+
+div.contact-me {
+  margin: 2cm 0cm 2cm 0cm;
+
+  width: 100%;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  gap: 50px;
+}
+
+.contact-about {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-evenly;
+
+  width: 100%;
+}
+.contact-about-right {
+  border: 1px solid black;
+  width: 35%;
+  padding: 20px;
+  border-radius: 20px;
+}
+div.contact-about-right form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .second {
+    flex-flow: column nowrap;
+  }
+}
